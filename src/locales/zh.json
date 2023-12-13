@@ -1,0 +1,53 @@
+{
+  "menu": {
+    "home": "首页",
+    "setting": "设置",
+    "favorite": "我喜欢",
+    "playList": "收藏"
+  },
+  "home": {
+    "trending": "趋势",
+    "myList": "我的列表",
+    "savedPlayList": "已保存列表",
+    "more": "更多",
+    "showAll": "查看全部"
+  },
+  "music": {
+    "name": "名称",
+    "artist": "歌手",
+    "time": "时长",
+    "album": "专辑",
+    "playList": "歌单",
+    "song": "歌曲",
+    "createNew": "创建",
+    "close": "关闭",
+    "save": "保存",
+    "saveSuccess": "保存成功",
+    "existed": "已存在"
+  },
+  "search": "搜索",
+  "setting": {
+    "select": "选择",
+    "selectDownloadFolder": "选择下载至目标文件夹",
+    "language": "语言",
+    "downloadPath": "下载地址",
+    "theme": "主题",
+    "about": "关于",
+    "feedback": "Feedback",
+    "clearCache": "清除缓存",
+    "clearCacheTip": "清除缓存会删除所有本地音乐缓存",
+    "clearCacheConfirm": "确定要清除吗?",
+    "yes": "是",
+    "no": "否",
+    "clearCacheSuccess": "清除成功!",
+    "clearCacheFail": "清除失败!"
+  },
+  "detail": {
+    "songs": "首歌曲",
+    "song": "歌曲",
+    "play": "播放",
+    "saveToList": "收藏",
+    "album": "专辑",
+    "more": "更多"
+  }
+}

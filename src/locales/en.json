@@ -1,0 +1,53 @@
+{
+  "menu": {
+    "home": "Home",
+    "setting": "Setting",
+    "favorite": "Favorite",
+    "playList": "PlayList"
+  },
+  "home": {
+    "trending": "Trending",
+    "myList": "My PlayList",
+    "savedPlayList": "Saved PlayList",
+    "more": "More",
+    "showAll": "Show All"
+  },
+  "music": {
+    "name": "Name",
+    "artist": "Artist",
+    "time": "Time",
+    "album": "Album",
+    "playList": "PlayList",
+    "song": "Song",
+    "createNew": "Create New",
+    "close": "Close",
+    "save": "Save",
+    "saveSuccess": "Save Success",
+    "existed": "Existed"
+  },
+  "search": "Search",
+  "setting": {
+    "select": "Select",
+    "selectDownloadFolder": "Select Download Folder",
+    "language": "Language",
+    "downloadPath": "Download Path",
+    "theme": "Theme",
+    "about": "About",
+    "feedback": "Feedback",
+    "clearCache": "Clear Cache",
+    "clearCacheTip": "Clear cache will delete all local music cache",
+    "clearCacheConfirm": "Are you sure to clear cache?",
+    "yes": "Yes",
+    "no": "No",
+    "clearCacheSuccess": "Clear cache success!",
+    "clearCacheFail": "Clear cache fail!"
+  },
+  "detail": {
+    "songs": "Songs",
+    "song": "Song",
+    "play": "Play",
+    "saveToList": "Save To PlayList",
+    "album": "Album",
+    "more": "More"
+  }
+}
