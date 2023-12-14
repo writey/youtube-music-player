@@ -5,9 +5,9 @@ import Favorite from './Favorite'
 import { useNavigate } from 'react-router-dom'
 
 const data = [
-  { name: '吹灭小山河', img: './src/assets/1.jpg', artist: '司南', album: '' },
-  { name: '春山空', img: './src/assets/2.jpg', artist: '任然', album: '' },
-  { name: '马步摇', img: './src/assets/3.jpg', artist: '尼莫问', album: '' },
+  { name: '吹灭小山河', img: `${window.isDev ? '': '.'}/assets/1.jpg`, artist: '司南', album: '' },
+  { name: '春山空', img: `${window.isDev ? '': '.'}/assets/2.jpg`, artist: '任然', album: '' },
+  { name: '马步摇', img: `${window.isDev ? '': '.'}/assets/3.jpg`, artist: '尼莫问', album: '' },
 ]
 
 const Home = () => {

@@ -9,8 +9,6 @@ const isDev = process.env.NODE_ENV === 'development'
 const dirName =  process.cwd()
 const appPath = app.getAppPath()
 
-
-// throw new Error(dirName);
 const ndxPath = isDev ? `http://localhost:${process.env.port || 3000}` : `file://${path.resolve(appPath, './dist/index.html')}`
 
 const cacheDir = path.resolve(dirName, './cache/')
@@ -28,7 +26,10 @@ const createWindow = () => {
     titleBarStyle: 'hidden'
   })
   win.loadURL(ndxPath)
-  win.webContents.openDevTools()
+  if (isDev) win.webContents.openDevTools()
+  win.webContents.on('dom-ready', () => {
+    win.webContents.executeJavaScript(`window.isDev = ${isDev};`);
+  })
 }
 
 const addOnActiveListen = () => app.on('activate', () => {

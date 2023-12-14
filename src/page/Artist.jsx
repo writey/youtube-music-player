@@ -7,6 +7,7 @@ import PlayList from '@/components/PlayList'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
+const defaultThumbnailPath = `${window.isDev ? '': '.'}/assets/thumbnail.jpg`
 const Artist = () => {
   const { t } = useTranslation()
   const navigate = useNavigate()
@@ -18,7 +19,7 @@ const Artist = () => {
     title: '',
     trackCount: 0,
     artist: [{ name: '' }],
-    thumbnails: [{url: '/src/assets/thumbnail.jpg'}]
+    thumbnails: [{url: defaultThumbnailPath}]
   })
   const onGetDetail = (_, args) => {
     console.log(args)

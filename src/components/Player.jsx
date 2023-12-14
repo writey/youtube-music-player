@@ -12,6 +12,7 @@ import { onFavoriteWithSave } from '@/redux/userData'
 import { setCurrent } from '@/redux/current'
 import SavePopover from '@/components/SavePopover'
 
+const defaultThumbnailPath = `${window.isDev ? '': '.'}/assets/thumbnail.jpg`
 const Player = () => {
   const audioRef = useRef()
   const [volume, setVolume] = useState(store.get('volume') || 100)
@@ -77,8 +78,8 @@ const Player = () => {
       <div className='flex items-center justify-start mr-2'>
         <img
           className={`mr-2 transition-all h-14 rounded-xl ${current?.thumbnails? 'w-14': 'w-0'}`}
-          // onError={e => e.target.src = '/src/assets/thumbnail.jpg'}
-          src={`${(current?.thumbnails?.length && current?.thumbnails[0]?.url) || '/src/assets/thumbnail.jpg'}`} />
+          onError={e => e.target.src = defaultThumbnailPath}
+          src={`${(current?.thumbnails?.length && current?.thumbnails[0]?.url) || defaultThumbnailPath}`} />
         {/* <div>
           <div className='w-24 overflow-hidden whitespace-nowrap overflow-ellipsis'>
             { current?.name || '' }

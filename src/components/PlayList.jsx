@@ -12,6 +12,7 @@ import { onFavoriteWithSave } from '@/redux/userData'
 import { setCurrent } from '@/redux/current'
 import SavePopover from '@/components/SavePopover'
 
+const defaultThumbnailPath = `${window.isDev ? '': '.'}/assets/thumbnail.jpg`
 const PlayList = forwardRef(({ isLoading = false, type = 'song', onDelete = null }, ref) => {
   const { t } = useTranslation()
   const navigate = useNavigate()
@@ -131,7 +132,7 @@ const PlayList = forwardRef(({ isLoading = false, type = 'song', onDelete = null
           key: 'img',
           width: 80,
           onCell: () => ({className: 'rounded-tl-xl rounded-bl-xl'}),
-          render: (text, row) => <img className='rounded-lg ' src={row?.thumbnails[0]?.url || '/src/assets/thumbnail.jpg'} />
+          render: (text, row) => <img className='rounded-lg ' src={row?.thumbnails[0]?.url || defaultThumbnailPath} />
         },
         {
           title: '名称',
@@ -154,7 +155,7 @@ const PlayList = forwardRef(({ isLoading = false, type = 'song', onDelete = null
           key: 'img',
           width: 80,
           onCell: () => ({className: 'rounded-tl-xl rounded-bl-xl'}),
-          render: (text, row) => <img className='rounded-lg ' src={row?.thumbnails[0]?.url || '/src/assets/thumbnail.jpg'} />
+          render: (text, row) => <img className='rounded-lg ' src={row?.thumbnails[0]?.url || defaultThumbnailPath} />
         },
         {
           title: '名称',
@@ -183,7 +184,7 @@ const PlayList = forwardRef(({ isLoading = false, type = 'song', onDelete = null
           key: 'img',
           width: 80,
           onCell: () => ({className: 'rounded-tl-xl rounded-bl-xl'}),
-          render: (text, row) => <img className='rounded-lg ' src={row?.thumbnails[0]?.url || '/src/assets/thumbnail.jpg'} />
+          render: (text, row) => <img className='rounded-lg ' src={row?.thumbnails[0]?.url || defaultThumbnailPath} />
         },
         {
           title: '名称',

@@ -6,6 +6,7 @@ import { Spin } from 'antd'
 import PlayList from '@/components/PlayList'
 import { useTranslation } from 'react-i18next'
 
+const defaultThumbnailPath = `${window.isDev ? '': '.'}/assets/thumbnail.jpg`
 const Detail = () => {
   const { t } = useTranslation()
   const { type, browseId } = useParams()
@@ -15,7 +16,7 @@ const Detail = () => {
     title: '',
     trackCount: 0,
     artist: [{ name: '' }],
-    thumbnails: [{url: '/src/assets/thumbnail.jpg'}]
+    thumbnails: [{url: defaultThumbnailPath}]
   })
   const settingMap = {
     'album': {
