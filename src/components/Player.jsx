@@ -124,7 +124,7 @@ const Player = () => {
         <Slider min={0} value={currentTime} max={current?.duration} step={100}
           tooltip={{ formatter: val => convertoTime(val) }}
           className='flex-1 w-20 mx-4 ml-4 custom-slider'
-          onChange={val => audioRef.current.currentTime = (val / 1000)}
+          onChange={val => {setCurrentTime(val), audioRef.current.currentTime = (val / 1000)}}
         />
         <span>{ current?.duration ? convertoTime(current?.duration): '00:00'}</span>
         <audio ref={audioRef} id="audioPlayer">
