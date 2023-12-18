@@ -1,5 +1,7 @@
 # YouTube Music Player
 [中文](./readme.md) | [English](./readme_en.md)
+
+
 YouTube Music Player 是一个非官方桌面端Youtube音乐播放器，你可以通过它来搜索，播放，收藏，下载YouTube音乐。
 ![img](./images/1.png)
 ## 构建
@@ -35,6 +37,8 @@ npm run build
 
 ## 鸣谢
 [emresenyuva/youtube-music-api](https://github.com/emresenyuva/youtube-music-api)
+
+
 [Bee Music - 🎵 Music Media Player Dashboard](https://dribbble.com/shots/16618273-Bee-Music-Music-Media-Player-Dashboard)
 
 ## License

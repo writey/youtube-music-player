@@ -1,5 +1,7 @@
 # YouTube Music Player
 [中文](./readme.md) | [English](./readme_en.md)
+
+
 YouTube Music Player is an unofficial desktop application, designed to facilitate  searching, saving, and downloading of your favorite music from YouTube Music.
 ![img](./images/1.png)
 ## Build With
@@ -34,6 +36,8 @@ After building, you can find the packaged application in the dist directory.
 
 ## Acknowledgments
 [emresenyuva/youtube-music-api](https://github.com/emresenyuva/youtube-music-api)
+
+
 [Bee Music - 🎵 Music Media Player Dashboard](https://dribbble.com/shots/16618273-Bee-Music-Music-Media-Player-Dashboard)
 
 ## License

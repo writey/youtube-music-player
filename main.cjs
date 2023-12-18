@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog, nativeTheme } = require('electron')
+const { app, BrowserWindow, ipcMain, dialog, nativeTheme, screen } = require('electron')
 const path = require('path')
 const YoutubeMusicApi = require('youtube-music-api-writey')
 const fs = require('fs')
@@ -207,6 +207,16 @@ api.initalize().then(info => {
       `https://music.youtube.com/watch?v=${msg}`,
       { filter: 'audioonly' }
     ).pipe(fs.createWriteStream(filePath)).on('close', res)
+  })
+  ipcMain.on('tigger-mini-window', async(event, isShow) => {
+    if (isShow) {
+      const { width } = screen.getPrimaryDisplay().workAreaSize;
+      win.setSize(400, 300)
+      win.setPosition(width - win.getBounds().width - 50, 100)
+    } else {
+      win.setSize(900, 700)
+      win.center()
+    }
   })
 })
 
